@@ -12,15 +12,16 @@
 }
 
 .tt {
-    margin-left: 150px;
-    margin-top: 11px;
-    line-height: 3px;
-    font-size: 14px;
+    width: 80%;
+    margin: auto;
+    margin-top: 5px;
+    line-height: 20px;
+    font-size:1vw;
 }
 
 .main1 {
     background-color: rgb(51, 50, 50);
-    height: 100px;
+    height: 13vh;
 
 }
 
@@ -31,6 +32,7 @@
 
 .main1 {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .btn {
@@ -309,7 +311,7 @@ li {
     display: flex;
     position: fixed;
     bottom: 80px;
-    right: 450px;
+    right: 150px;
     z-index: 1000;
 
 }
@@ -347,16 +349,7 @@ li {
     opacity: 0;
     margin-right: 10px;
 }
-.chat ::after{
-    content: '';
-    position: absolute;
-    top:50%;
-    right: 100%;
-    margin-top: -10px;
-    border-width: 10px;
-    border-style: solid;
-    border-color: transparent white transparent transparent;
-}
+
 .end :hover .chat {
     opacity: 0;
 }
@@ -401,4 +394,38 @@ li {
 .button1 :hover {
     background-color: white;
     border-color: rgb(156, 154, 154);
+}
+
+
+@media screen and (max-width:576px){
+    .header {
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        z-index: 1000;
+    } 
+    .main {
+        background-color:rgb(248, 228, 218);
+        width: 100%;
+    }
+    .tt {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        margin-top: 5px;
+        line-height: 20px;
+        font-size:2vw;
+    }
+    .main1 {
+        background-color: rgb(51, 50, 50);
+        height: 13vh;
+    }
+    .logo {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .logo img{
+        width: 200px;
+    }
 }
